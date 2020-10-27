@@ -1,5 +1,86 @@
 gsap.registerPlugin(ScrollTrigger);
 
+var formes = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.wrapper-projets',
+    markers: true,
+    start: '0% 0%',
+    end: '100% 100%',
+    toggleActions: 'play none play none',
+    scrub: 1
+  },
+  defaults:{
+    ease: 'linear.inOut'
+  },
+})
+
+.from('.forme05', {
+  y: -75,
+  x: -15,
+  duration: 1,
+})
+
+.from('.forme03', {
+  x: -50,
+  y: -30,
+  duration: 1,
+},'<')
+
+.from('.forme04', {
+  y: 75,
+  x: 15,
+  duration: 0.9,
+},'<')
+
+.from('.forme06', {
+  x: 50,
+  y: 30,
+  duration: 1,
+},'<')
+
+.to('.forme05', {
+  x: -15,
+  duration: 1.2,
+})
+
+.to('.forme03', {
+  x: -50,
+  duration: 1.2,
+},'<')
+
+.to('.forme04', {
+  x: 15,
+  duration: 1.2,
+},'<')
+
+.to('.forme06', {
+  x: 50,
+  duration: 1.2,
+},'<')
+
+.to('.forme05', {
+  y: -75,
+  duration: 1.2,
+})
+
+.to('.forme03', {
+  y: -30,
+  duration: 1.2,
+},'<')
+
+.to('.forme04', {
+  y: 75,
+  duration: 1.2,
+},'<')
+
+.to('.forme06', {
+  y: 30,
+  duration: 1.2,
+},'<')
+
+
+
+
 
 var nom = gsap.timeline({
     scrollTrigger: {
@@ -30,7 +111,7 @@ var nom = gsap.timeline({
   .to('h1',{
     display: 'none',
     duration: 0.1,
-  },'>')
+  },'<')
 
   var connaissances = gsap.timeline({
     scrollTrigger: {
