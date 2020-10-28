@@ -236,7 +236,7 @@ h3{
         color:black;
         position: fixed;
         float: left;
-        top: 10%;
+        top: 5%;
         left: 10%;
         font-family: Quicksand;
     }
@@ -246,7 +246,7 @@ h3{
         color:black;
         position: fixed;
         float: left;
-        top: 20%;
+        top: 15%;
         left: 10%;
         font-family: Quicksand Light;
         width: 50%;
@@ -333,7 +333,7 @@ h3{
     }
 
     .videoResponsive{
-        width: 40%;
+        width: 50%;
         top: 35%
     }
 
@@ -346,7 +346,7 @@ h3{
     }
 
     .imagesDetail{
-        width: 40%;
+        width: 50%;
     }
 }
 
@@ -504,7 +504,7 @@ h3{
 
     .imagesDetail{
         width: 80%;
-        top: 75%;
+        top: 70%;
         justify-content: space-around;
     }
 
@@ -515,18 +515,18 @@ h3{
     }
 
     .videoResponsive {
-        top: 45%;
+        top: 40%;
         width: 70%;
     }
 
     .titreDetail{
-        font-size: 2.5em;
-        top: 5%;
+        font-size: 1.5em;
+        top: 2%;
     }
 
     .texteDetail{
-        font-size: 1.3em;
-        top: 15%
+        font-size: 1.1em;
+        top: 8%
     }
 
     #imageDetail01{
