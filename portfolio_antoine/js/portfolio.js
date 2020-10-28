@@ -78,10 +78,6 @@ var formes = gsap.timeline({
   duration: 1.2,
 },'<')
 
-
-
-
-
 var nom = gsap.timeline({
     scrollTrigger: {
       trigger: '.wrapper-projets',
@@ -92,7 +88,6 @@ var nom = gsap.timeline({
     }
   })
 
-  
   .to('.forme01', {
     opacity: '0',
     duration: 1,

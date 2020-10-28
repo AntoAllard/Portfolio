@@ -1,0 +1,378 @@
+/* CSS basics ---------------------------------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url("../typo/Quicksand-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Quicksand Light';
+    src: url("../typo/Quicksand-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Quicksand Bold';
+    src: url("../typo/Quicksand-Bold.otf") format("opentype");
+}
+
+ /* CSS Portfolio ---------------------------------------------------------------------------------------------*/
+
+.wrapper-portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    font-family: Quicksand Light;
+}
+
+.wrapper-presentation {
+    width: 100%;
+    height: 350vh;
+    background-color: white;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3em;
+    color:black;
+    position: fixed;
+    float: left;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    z-index: 3;
+    opacity: 1;
+}
+
+.forme01{
+    width: 40%;
+    position: fixed;
+    top: 50%;
+    left: 39.5%;
+    z-index: 2;
+    transform: translateY(-50%);
+    opacity: 1;
+    visibility: hidden;
+}
+
+.forme02{
+    position: fixed;
+    width: 40%;
+    opacity: 1;
+    z-index: 1;
+    top: 20%;
+    left: 50%;
+    overflow: visible;
+    display: none;
+}
+
+.forme03{
+    position: fixed;
+    width: 50%;
+    overflow: visible;
+    z-index: 4;
+    top: 0%;
+    left: 0%;
+}
+
+.forme04{
+    position: fixed;
+    width: 50%;
+    z-index: 1;
+    bottom: 0%;
+    right: 0%;
+}
+
+.forme05{
+    position: fixed;
+    width: 50%;
+    overflow: visible;
+    z-index: 3;
+    top: 0%;
+    left: 0%;
+}
+
+.forme06{
+    position: fixed;
+    width: 50%;
+    z-index: 0;
+    bottom: 0%;
+    right: 0%;
+}
+
+h2{
+    font-size: 2em;
+    font-family: Quicksand Light;
+}
+
+.presentation{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    float: left;
+    transform: translateY(-50%);
+    z-index: 4;
+    color: black;
+    opacity: 0;
+    display: none;
+    width: 40%;
+}
+
+.connaissancesPro {
+    font-family: Quicksand Light;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.connaissancesLog {
+    font-family: Quicksand;
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+
+.allProjets{
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50 0 50;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    opacity: 0;
+    position: fixed;
+    z-index: 5;
+}
+
+.allProjets::-webkit-scrollbar { 
+    display: none;
+}
+.projet{
+    width: 25%;
+    height: 30%;
+    overflow: visible;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.imgClick{
+    width: 90%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.imgProjet{
+    height: 100%;
+    border-radius: 10px;
+    overflow: visible;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.projet:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+h3{
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
+}
+
+.blockTitre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper-contact{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    float: left;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+    opacity: 0;
+}
+
+
+.contact{
+    font-size: 1.5em ;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.lol{
+       width: 100vw;
+       height: 100vh;
+       background-color: aqua; 
+    }
+
+    .titreDetail{
+
+    }
+
+    .texteDetail{
+
+    }
+
+    .logicielsDetail{
+
+    }
+
+    .videoDetail{
+
+    }
+
+    .carouselDetail{
+
+    }
+/* CSS Queries ---------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1200px){
+    .forme03{
+        width: 70%;
+    }
+
+    .forme05{
+        width: 70%;
+    }
+
+    .forme04{
+        width: 70%;
+    }
+
+    .forme06{
+        width: 70%;
+    }
+
+    .connaissancesLog {
+        font-size: 1.1em;
+    }
+
+    .wrapper-contact{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .forme03{
+        width: 80%;
+    }
+
+    .forme05{
+        width: 80%;
+    }
+
+    .forme04{
+        width: 80%;
+    }
+
+    .forme06{
+        width: 80%;
+    }
+
+    .presentation{
+        top: 60%;
+        left: 50%;
+        width: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    .connaissancesLog {
+        font-size: 1.1em;
+    }
+
+    .wrapper-contact{
+        width: 100%;
+    }
+
+    h1{
+        
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px){
+    h1{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    .forme03{
+        width: 90%;
+    }
+
+    .forme05{
+        width: 90%;
+    }
+
+    .forme04{
+        width: 90%;
+    }
+
+    .forme06{
+        width: 90%;
+    }
+
+    .projet{
+        width: 50%;
+        height: 40%;
+        text-align: center;
+    }
+
+    h3{
+        height: 100px;
+    }
+
+    .connaissancesPro {
+        font-size: 1.2em;
+        text-align: justify;
+    }
+    
+    .connaissancesLog {
+        font-size: 1em;
+        text-align: left;
+    }
+    
+    h2{
+        text-align: center;
+    }
+
+    .presentation{
+       top: 55%;
+    }
+
+    .contact{
+        font-size: 1.3em;
+    }
+
+    .allProjets{
+        padding: 0 20 0 20;
+    }
+    
+    /* CSS Pages détails ---------------------------------------------------------------------------------------------*/
+
+    
+
+}
