@@ -3,7 +3,6 @@ gsap.registerPlugin(ScrollTrigger);
 var formes = gsap.timeline({
   scrollTrigger: {
     trigger: '.wrapper-projets',
-    markers: true,
     start: '0% 0%',
     end: '100% 100%',
     toggleActions: 'play none play none',

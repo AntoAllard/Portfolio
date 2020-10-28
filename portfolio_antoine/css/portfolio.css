@@ -265,14 +265,38 @@ h3{
 
     .imageDetail{
         width: 45%;
-        
+        object-fit: cover;
     }
 
     .imageDetail:hover{
         transform-origin: bottom left ;
         transition: transform 0.5s;
         -webkit-transform:scale(3);
-        transform:scale(3) translate(-10px);
+        transform:scale(3);
+    }
+
+    .imagesDetailNoVid{
+        position: fixed;
+        width: 50%;
+        top: 40%;
+        left: 10%;
+        display: flex;
+        justify-content: space-around;
+        z-index: 3;
+        flex-wrap: wrap;
+    }
+
+    .imageDetailNoVid{
+        width: 40%;
+        object-fit: cover;
+        margin: 5px;
+    }
+
+    .imageDetailNoVid:hover{
+        transform-origin: bottom left ;
+        transition: transform 0.5s;
+        -webkit-transform:scale(2.5);
+        transform:scale(2.5);
     }
 
     .videoResponsive {
@@ -304,6 +328,16 @@ h3{
         position: fixed;
         top: 10;
         left: 10;
+    }
+
+    #anchor{
+        position : absolute;
+        width: 10px;
+        height: 10px;
+        background-color: cyan;
+        z-index: 10;
+        top: 175%;
+        opacity: 0;
     }
 /* CSS Queries ---------------------------------------------------------------------------------------------*/
 
@@ -348,6 +382,14 @@ h3{
     .imagesDetail{
         width: 50%;
     }
+
+
+    .imageDetailNoVid{
+        width: 47%;
+        object-fit: cover;
+        margin: 5px;
+    }
+
 }
 
 @media (max-width: 768px){
@@ -432,6 +474,22 @@ h3{
         padding-bottom: 20px;
         object-fit: cover;
     }
+
+    .imageDetailNoVid{
+        width: 46%;
+    }
+
+    .imagesDetailNoVid{
+        width: 60%;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .imageDetailNoVid:hover{
+        transform-origin: bottom center ;
+    }
+    
 }
 
 @media (max-width: 575px){
@@ -497,7 +555,7 @@ h3{
 
     .imageDetail{
         width: 45%;
-        height: 175px;
+        height: 150px;
         object-fit: cover;
         padding-bottom: 0;
     }
@@ -521,12 +579,12 @@ h3{
 
     .titreDetail{
         font-size: 1.5em;
-        top: 2%;
+        top: 7%;
     }
 
     .texteDetail{
         font-size: 1.1em;
-        top: 8%
+        top: 12%
     }
 
     #imageDetail01{
@@ -535,5 +593,13 @@ h3{
 
     #imageDetail02{
         transform-origin: bottom right;
+    }
+
+    .imageDetailNoVid{
+        width: 80%;
+    }
+
+    .imageDetailNoVid:hover{
+        transform: scale(2);
     }
 }
