@@ -128,7 +128,7 @@ var nom = gsap.timeline({
   })
 
   .to('.presentation',{
-    duration: 2,
+    duration: 3,
   })
 
   .to('.presentation',{
@@ -144,7 +144,7 @@ var nom = gsap.timeline({
     scrollTrigger: {
       trigger: '.wrapper-projets',
       start: '65% 80%',
-      end: '65% 20%',
+      end: '65% 5%',
       toggleActions: 'play none play none',
       scrub: 1,
     }
@@ -166,7 +166,7 @@ var nom = gsap.timeline({
   })
 
   .to('.allProjets',{
-    duration: 5,
+    duration: 7,
   })
 
   .to('.allProjets',{
