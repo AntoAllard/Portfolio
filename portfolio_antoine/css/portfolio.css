@@ -251,6 +251,7 @@ h3{
         font-family: Quicksand Light;
         width: 50%;
         text-align: justify;
+        z-index: 1;
     }
 
     .imagesDetail{
