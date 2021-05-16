@@ -80,40 +80,30 @@ var formes = gsap.timeline({
 var nom = gsap.timeline({
     scrollTrigger: {
       trigger: '.wrapper-projets',
-      start: '25% 80%',
-      end: '25% 30%',
+      start: '30% 30%',
+      end: '30% 30%',
       toggleActions: 'play none play none',
-      scrub: 1
+      scrub: 1,
+      markers: true,
     }
   })
 
-  .to('.forme01', {
-    opacity: '0',
-    duration: 1,
-  })
-
-  .to('h1',{
-    opacity: '0',
-    duration: 1,
-  })
-
-  .to('.forme01',{
-    display: 'none',
-    duration: 0.1,
-  })
-
   .to('h1',{
     display: 'none',
-    duration: 0.1,
-  },'<')
+  })
+
+.to('h1',{
+    opacity: '0',
+  })
 
   var connaissances = gsap.timeline({
     scrollTrigger: {
       trigger: '.wrapper-projets',
-      start: '45% 80%',
+      start: '45% 70%',
       end: '45% 30%',
       toggleActions: 'play none play none',
-      scrub: 1
+      scrub: 1,
+      markers : true,
     }
   })
 
@@ -124,16 +114,16 @@ var nom = gsap.timeline({
 
   .to('.presentation',{
     opacity: '1',
-    duration: 1,
+    duration: 0.1,
   })
 
   .to('.presentation',{
-    duration: 3,
+    duration: 5,
   })
 
   .to('.presentation',{
     opacity: '0',
-    duration: 1,
+    duration: 0.1,
   })
   .to('.presentation',{
     display: 'none',
@@ -147,6 +137,7 @@ var nom = gsap.timeline({
       end: '65% 5%',
       toggleActions: 'play none play none',
       scrub: 1,
+      markers: true,
     }
   })
 
@@ -162,7 +153,7 @@ var nom = gsap.timeline({
 
   .to('.allProjets',{
     opacity: '1',
-    duration: 3,
+    duration: 0.1,
   })
 
   .to('.allProjets',{
@@ -171,7 +162,7 @@ var nom = gsap.timeline({
 
   .to('.allProjets',{
     opacity: '0',
-    duration: 2,
+    duration: 0.1,
   })
 
   .to('.imgClick',{
@@ -201,7 +192,7 @@ var nom = gsap.timeline({
 
   .to('.wrapper-contact',{
     opacity: '1',
-    duration: 3,
+    duration: 0.1,
   })
 
   .to('.wrapper-contact',{
